@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- == icon == -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+
+    <!--=============== BOXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <!-- ---------------REMIXICONS----------------- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.min.css"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/colors/color-1.css" />
+
+    <title>Olshop Project</title>
+  </head>
+  <body>
+    <!--=============== HEADER ATAU NAVBAR ===============-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">
+          <i class="fa-brands fa-korvue nav__logo-kick"></i>
+          <span>ick Thread</span>
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link active-link">Home</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="shop.html" class="nav__link">Shop</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="cart.html" class="nav__link">Cart</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="blog.html" class="nav__link">Blog</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="faq.html" class="nav__link">Faq</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="contact.html" class="nav__link">Contact</a>
+            </li>
+          </ul>
+
+          <div class="nav__close" id="nav-close">
+            <i class="bx bx"></i>
+          </div>
+        </div>
+
+        <div class="nav__btns">
+          <div class="login__toggle" id="login-button">
+            <i class="bx bx-user"></i>
+          </div>
+
+          <div class="nav__shop" id="cart-shop">
+            <i class="bx bx-shopping-bag"></i>
+          </div>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="bx bx-grid-alt"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--=============== KERANJANG ===============-->
+    <div class="cart" id="cart">
+      <i class="bx bx-x cart__close" id="cart__close"></i>
+      <h2 class="cart__title-center">My Cart</h2>
+      <div class="cart__container">
+        <article class="cart__card">
+          <div class="cart__box">
+            <img src="assets/img/new-produk-3.png" alt="" class="cart__img" />
+          </div>
+
+          <div class="cart__details">
+            <h3 class="cart__title">NewBalance574</h3>
+            <span class="cart__price">899K IDR</span>
+
+            <div class="cart__amount">
+              <div class="cart__amount-content">
+                <span class="cart__amount-box">
+                  <i class="bx bx-minus"></i>
+                </span>
+
+                <span class="cart__amount-number">1</span>
+
+                <span class="cart__amount-box">
+                  <i class="bx bx-plus"></i>
+                </span>
+              </div>
+
+              <i class="bx bx-trash-alt cart__amount-trash"></i>
+            </div>
+          </div>
+        </article>
+
+        <article class="cart__card">
+          <div class="cart__box">
+            <img src="assets/img/new-produk-7.png" alt="" class="cart__img" />
+          </div>
+
+          <div class="cart__details">
+            <h3 class="cart__title">NikeACGFlyknit</h3>
+            <span class="cart__price">2.500K IDR</span>
+
+            <div class="cart__amount">
+              <div class="cart__amount-content">
+                <span class="cart__amount-box">
+                  <i class="bx bx-minus"></i>
+                </span>
+
+                <span class="cart__amount-number">1</span>
+
+                <span class="cart__amount-box">
+                  <i class="bx bx-plus"></i>
+                </span>
+              </div>
+
+              <i class="bx bx-trash-alt cart__amount-trash"></i>
+            </div>
+          </div>
+        </article>
+
+        <article class="cart__card">
+          <div class="cart__box">
+            <img src="assets/img/sepatu-3.png" alt="" class="cart__img" />
+          </div>
+
+          <div class="cart__details">
+            <h3 class="cart__title">NikeKyrie3</h3>
+            <span class="cart__price">1.500K</span>
+
+            <div class="cart__amount">
+              <div class="cart__amount-content">
+                <span class="cart__amount-box">
+                  <i class="bx bx-minus"></i>
+                </span>
+
+                <span class="cart__amount-number">1</span>
+
+                <span class="cart__amount-box">
+                  <i class="bx bx-plus"></i>
+                </span>
+              </div>
+
+              <i class="bx bx-trash-alt cart__amount-trash"></i>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="cart__prices">
+        <span class="cart__prices-item">3 item</span>
+        <span class="cart__prices-total">4.899K IDR</span>
+      </div>
+    </div>
+
+    <!--=============== LOGIN CIK ===============-->
+    <div class="login" id="login">
+      <i class="bx bx-x login__close" id="login-close"></i>
+      <h2 class="login__title-center">Login</h2>
+      <form action="" class="login__form grid">
+        <div class="login__content">
+          <label for="" class="login__label">Email</label>
+          <input type="email" class="login__input" />
+        </div>
+
+        <div class="login__content">
+          <label for="" class="login__label">Password</label>
+          <input type="password" class="login__input" />
+        </div>
+
+        <div>
+          <a href="#" class="button">Sign in</a>
+        </div>
+
+        <div>
+          <p class="signup">
+            Not a member? <a href="registration.html">Sign up now</a>
+          </p>
+        </div>
+      </form>
+    </div>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <!--=============== HOME PAGES ===============-->
+      <section class="home container">
+        <div class="swiper home-swiper">
+          <div class="swiper-wrapper">
+            <!-- Home Swipper 1 -->
+            <section class="swiper-slide">
+              <div class="home__content grid">
+                <div class="home__group">
+                  <img
+                    src="assets/img/new-produk-3.png"
+                    alt=""
+                    class="home__img"
+                  />
+                  <div class="home__indicator"></div>
+
+                  <div class="home__details-img">
+                    <h4 class="home__details-title">New Balance 574</h4>
+                    <span class="home__details-subtitle">Sneakers Shoes</span>
+                  </div>
+                </div>
+
+                <div class="home__data">
+                  <h3 class="home__subtitle">#1 Trending Item</h3>
+                  <h1 class="home__title">
+                    TAMPIL <br />
+                    STYLISH <br />
+                    SEKARANG!
+                  </h1>
+                  <p class="home__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officia obcaecati animi ratione aspernatur cumque minima?
+                  </p>
+
+                  <div class="home__buttons">
+                    <a href="details.html" class="button">Shop Now</a>
+                    <a href="details.html" class="button--link button--flex"
+                      >View Details
+                      <i class="bx bx-right-arrow-alt button__icon"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- batas -->
+            <!-- Home Swipper 2 -->
+            <section class="swiper-slide">
+              <div class="home__content grid">
+                <div class="home__group">
+                  <img
+                    src="assets/img/new-produk-2.png"
+                    alt=""
+                    class="home__img"
+                  />
+                  <div class="home__indicator"></div>
+
+                  <div class="home__details-img">
+                    <h4 class="home__details-title">Nike ACG Flyknit</h4>
+                    <span class="home__details-subtitle">CasualShoes</span>
+                  </div>
+                </div>
+
+                <div class="home__data">
+                  <h3 class="home__subtitle">#1 Trending Item</h3>
+                  <h1 class="home__title">
+                    TAMPIL <br />
+                    STYLISH <br />
+                    SEKARANG!
+                  </h1>
+                  <p class="home__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officia obcaecati animi ratione aspernatur cumque minima?
+                  </p>
+
+                  <div class="home__buttons">
+                    <a href="details.html" class="button">Shop Now</a>
+                    <a href="details.html" class="button--link button--flex"
+                      >View Details
+                      <i class="bx bx-right-arrow-alt button__icon"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- batas -->
+            <!-- Home Swipper 3 -->
+            <section class="swiper-slide">
+              <div class="home__content grid">
+                <div class="home__group">
+                  <img src="assets/img/sepatu-3.png" alt="" class="home__img" />
+                  <div class="home__indicator"></div>
+
+                  <div class="home__details-img">
+                    <h4 class="home__details-title">Nike Kyrie 3</h4>
+                    <span class="home__details-subtitle">Basketball Shoes</span>
+                  </div>
+                </div>
+
+                <div class="home__data">
+                  <h3 class="home__subtitle">#1 Trending Item</h3>
+                  <h1 class="home__title">
+                    TAMPIL <br />
+                    STYLISH <br />
+                    SEKARANG!
+                  </h1>
+                  <p class="home__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officia obcaecati animi ratione aspernatur cumque minima?
+                  </p>
+
+                  <div class="home__buttons">
+                    <a href="details.html" class="button">Shop Now</a>
+                    <a href="details.html" class="button--link button--flex"
+                      >View Details
+                      <i class="bx bx-right-arrow-alt button__icon"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- batas -->
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!--=============== DISKONTOL ===============-->
+      <section class="discount section">
+        <div class="discount__container container grid">
+          <img src="assets/img/produk-1.png" alt="" class="discount__img" />
+
+          <div class="discount__data">
+            <h2 class="discount__title">
+              50% Diskon <br />Setiap Belanja 500K
+            </h2>
+            <a href="#" class="button">Go Shop</a>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== NEW ARRIVALS ===============-->
+      <section class="new section">
+        <h2 class="section__title">Barang Baru</h2>
+
+        <div class="new__container container">
+          <div class="swiper new-swiper">
+            <div class="swiper-wrapper">
+              <!-- NEW CONTENT 1 -->
+
+              <div class="new__content swiper-slide">
+                <div class="new__tag">New</div>
+                <img src="assets/img/produk-4.png" alt="" class="new__img" />
+                <h3 class="new__title">Nike AJ Blue Ocean</h3>
+                <span class="new__subtitle">Special Edition</span>
+
+                <div class="new__prices">
+                  <span class="new__price">1.900K IDR</span>
+                  <span class="new__discount">2.500K IDR</span>
+                </div>
+
+                <a href="details.html" class="button new__button">
+                  <i class="bx bx-cart-alt new__icon"></i>
+                </a>
+              </div>
+
+              <!-- NEW CONTENT 2 -->
+              <div class="new__content swiper-slide">
+                <div class="new__tag">New</div>
+                <img
+                  src="assets/img/new-produk-5.png"
+                  alt=""
+                  class="new__img"
+                />
+                <h3 class="new__title">Nike Airmax 270</h3>
+                <span class="new__subtitle">Special Edition</span>
+
+                <div class="new__prices">
+                  <span class="new__price">900K IDR</span>
+                  <span class="new__discount">1.500K IDR</span>
+                </div>
+
+                <a href="details.html" class="button new__button">
+                  <i class="bx bx-cart-alt new__icon"></i>
+                </a>
+              </div>
+
+              <!-- NEW CONTENT 3 -->
+              <div class="new__content swiper-slide">
+                <div class="new__tag">New</div>
+                <img
+                  src="assets/img/new-produk-2.png"
+                  alt=""
+                  class="new__img"
+                />
+                <h3 class="new__title">Nike ACG Flyknit</h3>
+                <span class="new__subtitle">Special Edition</span>
+
+                <div class="new__prices">
+                  <span class="new__price">2.500K IDR</span>
+                  <span class="new__discount">3.500K IDR</span>
+                </div>
+
+                <a href="details.html" class="button new__button">
+                  <i class="bx bx-cart-alt new__icon"></i>
+                </a>
+              </div>
+
+              <!-- NEW CONTENT 4 -->
+              <div class="new__content swiper-slide">
+                <div class="new__tag">New</div>
+                <img
+                  src="assets/img/new-produk-3.png"
+                  alt=""
+                  class="new__img"
+                />
+                <h3 class="new__title">New Balance 574</h3>
+                <span class="new__subtitle">Special Edition</span>
+
+                <div class="new__prices">
+                  <span class="new__price">899K IDR</span>
+                  <span class="new__discount">1.500K IDR</span>
+                </div>
+
+                <a href="details.html" class="button new__button">
+                  <i class="bx bx-cart-alt new__icon"></i>
+                </a>
+              </div>
+
+              <!-- NEW CONTENT 5 -->
+              <div class="new__content swiper-slide">
+                <div class="new__tag">New</div>
+                <img src="assets/img/produk-1.png" alt="" class="new__img" />
+                <h3 class="new__title">Nike Zoom Dynamic</h3>
+                <span class="new__subtitle">Special Edition</span>
+
+                <div class="new__prices">
+                  <span class="new__price">900K IDR</span>
+                  <span class="new__discount">1.500K IDR</span>
+                </div>
+
+                <a href="details.html" class="button new__button">
+                  <i class="bx bx-cart-alt new__icon"></i>
+                </a>
+              </div>
+
+              <!-- NEW CONTENT 6 -->
+              <div class="new__content swiper-slide">
+                <div class="new__tag">New</div>
+                <img
+                  src="assets/img/new-produk-6.png"
+                  alt=""
+                  class="new__img"
+                />
+                <h3 class="new__title">Air Jordan StreetWhite</h3>
+                <span class="new__subtitle">Special Edition</span>
+
+                <div class="new__prices">
+                  <span class="new__price">1.700K IDR</span>
+                  <span class="new__discount">2.800K IDR</span>
+                </div>
+
+                <a href="details.html" class="button new__button">
+                  <i class="bx bx-cart-alt new__icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== STEPS ===============-->
+      <section class="steps section container">
+        <div class="steps__bg">
+          <h2 class="section__title">
+            How To Shop <br />
+            from <b>Kick Thread?</b>
+          </h2>
+
+          <div class="steps__container grid">
+            <!-- STEPS CARD 1 -->
+            <div class="steps__card">
+              <div class="steps__card-number">01</div>
+              <h3 class="steps__card-title">Choose Product</h3>
+              <p class="steps__card-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                tempore soluta suscipit nobis rem repellendus!
+              </p>
+            </div>
+
+            <!-- STEPS CARD 2 -->
+            <div class="steps__card">
+              <div class="steps__card-number">02</div>
+              <h3 class="steps__card-title">Place an order</h3>
+              <p class="steps__card-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                tempore soluta suscipit nobis rem repellendus!
+              </p>
+            </div>
+
+            <!-- STEPS CARD 3 -->
+            <div class="steps__card">
+              <div class="steps__card-number">03</div>
+              <h3 class="steps__card-title">Get Order Delivered</h3>
+              <p class="steps__card-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                tempore soluta suscipit nobis rem repellendus!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== NEWSLETTER ===============-->
+      <section class="newsletter section">
+        <div class="newsletter__container container">
+          <h2 class="section__title">Our Newsletter</h2>
+          <p class="newsletter__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
+            dolor.
+          </p>
+
+          <form action="" class="newsletter__form">
+            <input
+              type="text"
+              placeholder="Enter your email"
+              class="newsletter__input"
+            />
+            <button class="button">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+      <div class="container">
+        <div class="col1">
+          <i class="brand">Kick Thread</i>
+          <ul class="media-icons">
+            <li>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-discord"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col2">
+          <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Contact</a></li>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Exercitationem excepturi ipsam unde obcaecati iusto velit labore
+              consequuntur officiis aut neque?
+            </p>
+          </ul>
+        </div>
+        <div class="col3">
+          <p>Subscribe to our newslatter</p>
+          <form>
+            <div class="input-wrap">
+              <input type="email" placeholder="ex@gmail.com" /><button
+                type="submit"
+              >
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </div>
+          </form>
+          <ul class="services-icons">
+            <li>
+              <a href="#"><i class="fa-brands fa-cc-paypal"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-cc-apple-pay"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-google-pay"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-cc-amazon-pay"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="mekk">
+          <p>@TimDev 2023 - All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href=".home" class="scrollup" id="scroll-up">
+      <i class="bx bx-up-arrow-alt scrollup__icon"></i>
+    </a>
+
+    <!--=============== STYLE SWITCHER ===============-->
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

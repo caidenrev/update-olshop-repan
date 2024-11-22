@@ -1,0 +1,11 @@
+bg navbar ====
+.bg-header .nav__logo span,
+.bg-header .nav__toggle {
+  color: var(--title-color);
+}
+/* Active link */
+.active-link {
+  color: var(--first-color);
+
+  js bg navbar ====
+  
