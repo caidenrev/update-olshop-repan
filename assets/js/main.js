@@ -24,7 +24,7 @@ const cart = document.getElementById("cart"),
   cartShop = document.getElementById("cart-shop"),
   cartClose = document.getElementById("cart__close");
 
-/*===== CART SHOW =====*/
+/*===== KERANJANG SHOW =====*/
 /* Validate if constant exists */
 if (cartShop) {
   cartShop.addEventListener("click", () => {
@@ -32,7 +32,7 @@ if (cartShop) {
   });
 }
 
-/*===== CART HIDDEN =====*/
+/*===== KERANJANG HIDDEN =====*/
 /* Validate if constant exists */
 if (cartClose) {
   cartClose.addEventListener("click", () => {
@@ -40,7 +40,7 @@ if (cartClose) {
   });
 }
 
-/*=============== SHOW LOGIN ===============*/
+/*=============== MUNCULIN LOGIN ===============*/
 const login = document.getElementById("login"),
   loginButton = document.getElementById("login-button"),
   loginClose = document.getElementById("login-close");
